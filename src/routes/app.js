@@ -1,7 +1,8 @@
-import { router as apiRouter } from "./routes/api.routes.js";
-import { mdebug } from "./middlewares/debug.middleware.js";
-import { notFound, errorHandler } from "./middlewares/errors.middleware.js";
-import { mcors } from "./middlewares/mcors.middleware.js";
+import express from "express";
+import { router as apiRouter } from "./api.routes.js";
+import { mdebug } from "../middlewares/debug.middleware.js";
+import { notFound, errorHandler } from "../middlewares/errors.middleware.js";
+import { mcors } from "../middlewares/mcors.middleware.js";
 
 const app = express();
 
