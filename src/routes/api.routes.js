@@ -1,6 +1,6 @@
 import { Router } from "express";
 import ApiController from "../controllers/api.controller.js";
-import verifyParamId from "../middlewares/verify_id.middleware.js";
+import verifyParamId from "../middlewares/verify.id.middleware.js";
 
 const router = Router();
 
