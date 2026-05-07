@@ -1,7 +1,7 @@
 {
   "name": "apin2v1",
   "version": "1.0.0",
-  "description": "Api Etapa N2 Versao 1",
+  "description": "Api Etapa N2 Avaliação 1",
   "main": "index.js",
   "scripts": {
     "start": "node src/routes/server.js",
