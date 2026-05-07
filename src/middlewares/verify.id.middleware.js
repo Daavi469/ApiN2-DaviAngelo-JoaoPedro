@@ -1,3 +1,4 @@
+
 // Middleware para Validação de um id
 const verifyParamId = (request, response, next) => {
   const id = request.params.id;
@@ -10,4 +11,3 @@ const verifyParamId = (request, response, next) => {
 };
 
 export default verifyParamId;
-
