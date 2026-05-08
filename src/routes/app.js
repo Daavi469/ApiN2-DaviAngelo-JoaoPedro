@@ -14,10 +14,8 @@ app.use(mdebug);
 app.use("/api", apiRouter);
 
 // Após todas as rotas, há o tratamento de erro para uma rota inexistente
-// Se nenhuma das rotas funcionar, será enviado um erro 404 ao cliente.
 app.use(notFound);
 
-// Middleware de erro
 app.use(errorHandler);
 
 export default app;
