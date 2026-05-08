@@ -4,21 +4,17 @@
 @contentType = application/json
 
 ### Verifica o status do servidor
-Send Request
 GET {{baseUrl}}/api/info
 Accept: {{contentType}}
 
 ### Testa o Middleware
-Send Request
 GET {{baseUrl}}/api/info/42
 Accept: {{contentType}}
 
 ### Testa o Middleware
-Send Request
 GET {{baseUrl}}/api/info/ABC
 Accept: {{contentType}}
 
 ### Testa o Middleware
-Send Request
 GET {{baseUrl}}/api/info/7
 Accept: {{contentType}}
