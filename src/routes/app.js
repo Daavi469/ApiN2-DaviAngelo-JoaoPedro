@@ -3,7 +3,7 @@ import { router as apiRouter } from "./api.routes.js";
 import { mdebug } from "../middlewares/debug.middleware.js";
 import { notFound, errorHandler } from "../middlewares/errors.middleware.js";
 import { mcors } from "../middlewares/mcors.middleware.js";
-import path from "node:path";
+import path from "path";
 
 const app = express();
 
@@ -13,11 +13,6 @@ app.use(express.json()); // Middleware global para lidar com JSON
 app.use(mdebug);
 
 app.use("/api", apiRouter);
-
-// Após todas as rotas, há o tratamento de erro para uma rota inexistente
-app.use(notFound);
-
-app.use(errorHandler);
 
 // Configurações de EJS
 app.set("view.engine", "ejs");
@@ -31,5 +26,10 @@ app.use(express.json()); // Importante para rotas REST
 app.get("/home", (req, res) => {
     res.render("home"); // Renderiza o esqueleto da página
   });
+
+// Após todas as rotas, há o tratamento de erro para uma rota inexistente
+app.use(notFound);
+
+app.use(errorHandler);
 
 export default app;
