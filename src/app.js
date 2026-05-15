@@ -22,7 +22,7 @@ app.use(mdebug);
 
 // Rotas API
 app.use("/api", apiRouter);
-//app.use("/api", productsRouter);
+app.use("/api", productsRouter);
 
 // Rotas Views
 app.get("/home", (req, res) => {
