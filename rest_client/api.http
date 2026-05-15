@@ -18,3 +18,17 @@ Accept: {{contentType}}
 ### Testa o Middleware
 GET {{baseUrl}}/api/info/7
 Accept: {{contentType}}
+
+// --- ROTA DE VIEW (EJS) ---
+app.get("/home", (req, res) => {
+  res.render("home"); // Renderiza o esqueleto da página
+});
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+app.get("/products", (req, res) => {
+  res.render("products");
+});
